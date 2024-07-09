@@ -88,10 +88,15 @@ document.getElementById('count-el').innerText = count;
 let saveEl = document.getElementById('save-el')
 let count = 0
 let countEl = document.getElementById('count-el')
+let sumOut = document.getElementById('sum-out')
 
 function increment(){
     count++
     countEl.innerText = count
+
+    function sum(){
+        sumOut.innerHTML = countEl;
+       }
 }
 
 // 1. Create a function, save(), which logs out the count when it's called
@@ -108,6 +113,7 @@ function save(){
     count = 0;
     countEl.innerText= 0
 }
+
 
 
 /**
@@ -146,3 +152,4 @@ welcomeEl.innerText = console.log(name +greeting)
 welcomeEl.innerText += "👋"
 
  */
+
