@@ -103,6 +103,10 @@ function save(){
     saveEl.textContent += countStr
     // NB: Make sure to not delete the existing content of the paragraph
     console.log(count)
+
+    // SET THE COUNT 0
+    count = 0;
+    countEl.innerText= 0
 }
 
 
