@@ -82,8 +82,10 @@ function increment(){
 document.getElementById('count-el').innerText = count;
 }
  * 
- * 
+ * DOM document object model-- how uses JavasCrop to modifay a wedbside 
  */
+// 1. Grab the save-el paragrah and store it in a variable called saveEl
+let saveEl = document.getElementById('save-el')
 let count = 0
 let countEl = document.getElementById('count-el')
 
@@ -91,3 +93,52 @@ function increment(){
     count++
     countEl.innerText = count
 }
+
+// 1. Create a function, save(), which logs out the count when it's called
+
+function save(){
+    let countStr = count + "  - "
+    // 2. Create a variable that contains both the count and the dash separator, i.e. "12 - "
+    // 3. Render the variable in the saveEl using innerText
+    saveEl.textContent += countStr
+    // NB: Make sure to not delete the existing content of the paragraph
+    console.log(count)
+}
+
+
+/**
+ * WRITE YOUR FIRST STRInG VARIABLE
+ * 
+ * let username = "per"
+let message = "You have three notifications"
+let messageToUser = message + ", " + username + "!"
+// Create a variable, message, that stores the string: "You have tree new notifications"
+
+console.log(username)
+console.log(message)
+
+let name = "Per Harald Borgen"
+let greeting = "Hi, my name is "
+let myGreeting = greeting + name
+console.log(myGreeting)
+
+
+// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+
+// Create two variables (name & greeting) that contains your name
+// and the greeting we want to render on the page
+
+// Render the welcome message using welcomeEl.innerText
+welcomeEl = document.getElementById('welcome-el').innerText;
+let name = 'Luis Restrepo'
+let greeting = 'Hey, welcome'
+welcomeEl.innerText = console.log(name +greeting)
+ * 
+
+// Add an emoji to the end! 👋
+// WRITE YOUR CODE BELOW HERE
+// HINT: count = count + 1
+
+welcomeEl.innerText += "👋"
+
+ */
